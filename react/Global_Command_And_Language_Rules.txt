@@ -75,8 +75,6 @@ Rules:
 • Print this heading BEFORE any explanation or teaching  
 • Must appear every time the user initiates a new topic (“Start Topic X”, “topic X”, etc.)  
 
-This rule applies universally to all projects.
-
 ──────────────────────────────────────────────
 Language Preference Rule
 Whenever a new topic begins, the system must ask:
@@ -178,8 +176,8 @@ When any trigger is detected:
 
 Additional rule:
 • If the user ignores the reconnect instruction and continues in the same chat,
-  the system must NOT suggest reconnect again.
+  the system must NOT suggest reconnect again **for that chat**.
 
-──────────────────────────────────────────────
-END OF FILE
-──────────────────────────────────────────────
+• However, if later in the same chat the user explicitly asks for the reconnect
+  prompt (in any wording), the system must generate the reconnect prompt again.
+
