@@ -1,0 +1,154 @@
+──────────────────────────────────────────────
+JavaScript Interview Mastery — Roadmap_JS
+Detailed Roadmap
+──────────────────────────────────────────────
+
+LEVEL 0 — FOUNDATIONAL CORRECTIONS (Fix Core Gaps)
+These 5 topics remove 90% of JS confusion for working developers.
+
+Topic 1 — Variables, Hoisting, TDZ
+    • var / let / const — memory allocation differences
+    • Compilation vs Execution phase
+    • Hoisting explained with memory diagrams
+    • Temporal Dead Zone (TDZ)
+    • Shadowing and redeclaration traps
+    • Output-based questions (interview-focused)
+    • “Explain hoisting in interview” framework
+
+Topic 2 — Scope & Lexical Environment
+    • Global, function, and block scope
+    • Lexical Environment (LE) creation
+    • Environment records + outer environment reference
+    • Shadowing, masking, illegal shadowing
+    • Scope chain resolution
+    • 20+ output questions on scoping
+    • Interview-perfect explanation structure
+
+Topic 3 — Closures (Most asked in interviews)
+    • What is closure (technical + simple explanation)
+    • Closure formation inside LE
+    • Practical uses: private variables, counters, currying
+    • Memory retention model
+    • Closure diagram (function + backpack)
+    • 25+ output questions
+    • 10 trick closure questions
+    • How to explain closure in 30 seconds
+
+Topic 4 — Execution Context & Call Stack
+    • Global Execution Context (GEC)
+    • Function Execution Context (FEC)
+    • Creation phase vs Execution phase
+    • Memory heap + call stack
+    • Understanding: undefined vs ReferenceError vs TypeError
+    • 20 output questions based on EC behavior
+    • Debugging reasoning for interviews
+
+Topic 5 — The “this” Keyword
+    • this in global scope (strict vs non-strict)
+    • this inside functions
+    • this inside methods (object context)
+    • this with call / bind / apply
+    • Arrow functions vs normal functions
+    • 20+ output questions
+    • How to answer “What is this?” in interview
+
+──────────────────────────────────────────────
+
+LEVEL 1 — REAL JAVASCRIPT WORKFLOW (Async & Object System)
+
+Topic 6 — Prototype, Prototype Chain & OOP
+    • How JS builds objects
+    • __proto__ vs prototype
+    • The prototype chain diagram
+    • Constructor functions + new keyword (internal steps)
+    • ES6 classes → internal behavior
+    • Encapsulation, inheritance, super()
+    • 20+ prototype output questions
+    • Interview-focused explanation patterns
+
+Topic 7 — Event Loop, Microtasks & Macrotasks
+    • Call Stack → Web APIs → Callback Queue
+    • Microtask Queue vs Macrotask Queue
+    • setTimeout, setInterval, setImmediate
+    • Promise resolution order
+    • Event Loop diagram
+    • 30+ advanced output questions (FAANG-style)
+    • Interview-style reasoning flows
+
+Topic 8 — Promises, Async/Await, Error Handling
+    • Promise lifecycle: pending → fulfilled → rejected
+    • .then(), .catch(), .finally()
+    • Microtask priority model
+    • async/await translation → promise chains
+    • Error handling patterns (nested, flattened)
+    • Promise.all, race, allSettled, any
+    • 20+ output questions
+    • How to answer “What is a promise?” cleanly
+
+──────────────────────────────────────────────
+
+LEVEL 2 — PRACTICAL DEVELOPMENT SKILLS (Used Daily in Work)
+
+Topic 9 — Arrays, Objects, Maps, Sets (Deep Practice)
+    • map, filter, reduce, find, some, every
+    • Mutating vs non-mutating operations
+    • Shallow vs deep cloning
+    • Spread, rest, computed keys
+    • Map vs Object, Set vs Array
+    • 20 coding exercises
+    • Array-based interview questions
+
+Topic 10 — ES6+ Modern JavaScript
+    • let/const rewiring
+    • Spread & rest
+    • Destructuring
+    • Template strings
+    • Arrow functions (advanced behavior)
+    • Optional chaining
+    • Nullish coalescing
+    • 15 output questions
+    • How to answer ES6 concepts in interview
+
+──────────────────────────────────────────────
+
+LEVEL 3 — INTERVIEW POWER-UP (Real Interview Prep)
+
+Topic 11 — 50 Output-Based Questions
+    • Hoisting + TDZ
+    • Closures
+    • Event loop ordering
+    • Promises and async/await
+    • this binding traps
+    • Prototype chain pitfalls
+    • Real questions from FAANG + product companies
+
+Topic 12 — 50 Trick Questions
+    • Deep-level questions created to confuse
+    • Undefined vs null vs NaN
+    • Implicit coercion puzzles
+    • Operator precedence traps
+    • Hidden closure behavior
+    • async/await misconceptions
+
+Topic 13 — JavaScript System Design Basics
+    • Debounce & Throttle
+    • Memoization
+    • Simple polyfills
+    • Deep clone function
+    • Custom event emitter
+    • API retry mechanism
+    • Cancelable promises
+    • Local caching strategy
+    • Observable pattern
+    • Designing search/filter pipelines
+    • Designing pagination logic
+
+──────────────────────────────────────────────
+
+LEVEL 4 (OPTIONAL)
+(Only if learner wants later)
+
+React Fundamentals for Interview
+Node.js Fundamentals for Interview
+Data Structures using JavaScript
+──────────────────────────────────────────────
