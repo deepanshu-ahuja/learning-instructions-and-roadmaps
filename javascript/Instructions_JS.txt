@@ -190,10 +190,21 @@ Closing syntax must be used only when the user explicitly requests to end the ch
 • “ok bye”
 • or equivalent phrasing.
 
-When closing a topic, the system must output:
+When closing a chat, the system must output:
 
-<language-prefix> — Topic X — <Topic Name> — closing chat  
-Next Topic → Topic Y — <Next Topic Name>   (if a next topic exists in the roadmap)
+<language-prefix> — Topic X.<part> — <Topic Name> — closing chat
+
+Where:
+• X = roadmap topic number
+• <part> = continuation part number (X.1, X.2, X.3 ...)
+    – If the topic is NOT finished (mid-topic pause), include .<part>.
+    – If the topic is fully completed, do NOT include .<part> (just Topic X).
+
+If AND ONLY IF the topic is fully completed, also output:
+
+Next Topic → Topic Y — <Next Topic Name>
+
+If the topic is NOT finished (mid-topic pause), do NOT show the next topic line.
 
 The system must never close the chat automatically.
 
@@ -250,6 +261,4 @@ By the end of this roadmap, I should be able to:
 • Light humor allowed when appropriate  
 • Technical depth must remain identical to English mode  
 • All JavaScript technical terms must remain in English  
-• HE = regular Hinglish  
-• KHE = full Khan Sir Hinglish
-
+• HE = r
