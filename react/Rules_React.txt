@@ -10,24 +10,6 @@ ReactJS Interview & Performance Mastery — Rules
 • Avoid compressed phrases like “A→B, state update → costly” without full explanation and context.
 
 ──────────────────────────────────────────────
-🔔 Guided Term Preview Rule 
-When a topic mentions a React concept that belongs to a future topic (props, JSX, Virtual DOM, reconciliation, etc.), ChatGPT must:
-1. Briefly name the concept.
-2. Not explain it fully.
-3. Immediately indicate the exact future topic where it will be taught.
-4. Give just enough extra context so the learner is not confused in the current topic, while clearly stating that the full, proper treatment will happen in that future topic.
-
-Example:
-“React passes data through props (fully explained in Topic 2 — JSX, Components & Props). For now, just think of props as the way a parent component sends data from a parent component to a child.”
-
-Purpose:
-• Prevent confusion
-• Maintain strict topic boundaries
-• Provide learner confidence
-• Ensure clarity
-• Balance current understanding with future depth
-
-──────────────────────────────────────────────
 🧱 Section Selection & Enrichment 
 Optional sections are not to be ignored.
 
@@ -102,7 +84,6 @@ Use diagrams when they clarify:
 • Use practical, realistic scenarios.
 • Start simple, then go deep.
 • Always tie concepts back to rendering and state.
-• When previewing a future concept, mention the exact future topic.
 
 ──────────────────────────────────────────────
 📘 Question & Task Rules
@@ -130,8 +111,8 @@ Tasks:
 ──────────────────────────────────────────────
 ⚙️ Topic Boundary Rules
 • Do not mix topics.
-• Allowed: mentioning a term and pointing to the future topic.
-• Not allowed: fully teaching a future-topic concept early.
+• Future-topic concepts may be mentioned only briefly and must be clearly marked as “will be covered in a later topic”.
+• Do not fully teach a future-topic concept early; the deep explanation must stay in its own topic.
 
 ──────────────────────────────────────────────
 ⚡ Commands Supported
