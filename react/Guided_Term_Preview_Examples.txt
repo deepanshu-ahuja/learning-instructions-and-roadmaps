@@ -1,0 +1,52 @@
+These examples demonstrate how to briefly preview a future topic
+without fully teaching it. They give just enough clarity to avoid
+confusion while keeping strict topic boundaries.
+
+──────────────────────────────────────────────
+Rendering Mechanics → Reconciliation (Future Topic)
+
+“When the UI updates, the library compares the previous virtual tree 
+with the freshly generated one. The internal algorithm that performs 
+this comparison is known as the reconciliation process. It decides 
+which parts of the UI need real updates and which can stay untouched. 
+We will explore this algorithm deeply in Topic 9. For now, just keep 
+in mind that reconciliation is the system’s way of determining what
+actually changed.”
+
+──────────────────────────────────────────────
+Hooks → Memoization (Future Topic)
+
+“Sometimes re-renders can be skipped when certain inputs remain the same. 
+Memoization tools help the system remember previous calculations or 
+component outputs so it doesn’t redo them every time. These mechanisms 
+greatly improve performance in large or dynamic UIs. We will go into 
+full detail in Topic 14. For now, think of memoization as a selective 
+memory that reduces unnecessary work.”
+
+──────────────────────────────────────────────
+Effects → Cleanup Logic (Future Topic)
+
+“Some side effects allocate resources or set up subscriptions that must 
+be cleaned up later. Cleanup logic runs before the effect executes again 
+or when the component is removed from the screen. It prevents memory 
+leaks and stale behavior. We will study this fully in Topic 7. For now, 
+just understand cleanup as the ‘undo’ or ‘reset’ step for effects.”
+
+──────────────────────────────────────────────
+State → Batching Behavior (Future Topic)
+
+“When multiple updates happen within the same event, the system may group 
+them into a single render cycle. This grouping is called batching. It avoids 
+extra work and improves performance. The full details of batching and how 
+it interacts with async logic will be covered in Topic 11. For now, just 
+remember that batching means combining several updates into one render.”
+
+──────────────────────────────────────────────
+Context → Provider/Consumer Flow (Future Topic)
+
+“Some values need to be shared across many components without passing
+them manually through every level. The mechanism that supports this is 
+the provider → consumer flow. It allows deeply nested parts of the UI 
+to access shared data efficiently. We will explore this in Topic 15. 
+For now, think of it as a structured channel for passing global data.”
+
