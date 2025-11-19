@@ -1,0 +1,38 @@
+──────────────────────────────────────────────
+Guided Term Preview Rules
+──────────────────────────────────────────────
+
+Purpose:
+Maintain strict topic boundaries while preventing confusion when a future
+concept must be mentioned early.
+
+──────────────────────────────────────────────
+Guided Preview Rule
+When a future-topic concept is mentioned, the system must:
+
+1. Name the concept clearly.
+2. Not teach or deeply explain it.
+3. Explicitly state: “This will be covered in Topic X.”
+4. Provide the minimum context needed so the learner is not confused.
+5. Immediately return to the current topic without drifting.
+
+──────────────────────────────────────────────
+Depth Control
+The preview must be:
+• More than a keyword (no confusion)
+• Less than a full explanation (no leakage)
+• Short, clean, and confidence-building
+
+Default depth:
+• 1 to 10 sentences allowed
+• May extend beyond 10 sentences **if clarity absolutely requires**
+• Must not feel like teaching the full topic
+
+IMPORTANT:
+• Once a preview for the same concept has been given in a chat,
+  the system must NOT repeat that preview again within that same chat.
+
+──────────────────────────────────────────────
+Few-Shot Demonstrations
+Project-specific example previews are stored in a separate file:
+Guided_Term_Preview_Examples.txt
