@@ -1,272 +1,139 @@
-──────────────────────────────────────────────
-ReactJS Interview & Performance Mastery — Roadmap_React
-──────────────────────────────────────────────
+ReactJS Interview & Performance Mastery — Rules 
 
-Goal:
-Teach ReactJS from fundamentals to advanced performance and frontend optimization,
-with a strong focus on:
-• React mental models
-• Hooks and state management
-• Performance pitfalls and anti-patterns
-• Frontend performance (bundle, network, rendering)
-• Architecture and system design
-• Redux, routing, class components (interview-focused)
-• React 19 latest features
-
-Assumption:
-JavaScript fundamentals are handled in the separate JS mastery project.
+🧠 Core Teaching Behavior
+• All explanations must be step-by-step.
+• Always explain WHY React renders or re-renders.
+• Ensure clarity with depth.
+• No shallow answers.
+• Never assume prior knowledge.
+• Answers must use clear, complete sentences instead of telegraphic shorthand.
+• Avoid compressed phrases like “A→B, state update → costly” without full explanation and context.
 
 ──────────────────────────────────────────────
-LEVEL 0 — React Fundamentals & Mental Models
+🧱 Section Selection & Enrichment 
+Optional sections are not to be ignored.
 
-Topic 1 — Why React? Rendering Model & Declarative UI
-    • UI = f(state) mental model
-    • Virtual representation of UI
-    • Component tree
-    • One-way data flow & immutability
-    • Imperative vs declarative rendering
+For every topic, ChatGPT must consciously evaluate:
+• Mental model / analogy
+• Diagram
+• Interview theory questions
+• Output-based questions
+• Trick questions
+• Mini coding tasks
+• Quick revision summary
 
-Topic 2 — JSX, Elements & Components
-    • JSX deeply explained
-    • Elements vs components vs instances
-    • Props, children, composition patterns
-    • Keys & early pitfalls
-    • Clean component structure
-
-Topic 3 — State Basics & Re-Render Mechanics
-    • What triggers a re-render
-    • Local vs derived state
-    • Anti-patterns (mutations, duplicated state)
-    • Visualizing re-renders
+Rules:
+• If the section helps understanding, it must be included.
+• If the section does not help, it may be skipped — but never skipped by default.
+• Deep practical examples are always mandatory.
 
 ──────────────────────────────────────────────
-LEVEL 1 — Core Hooks & Data Flow
+🧩 Explanation Standards
+Every topic includes:
+• What it is
+• Why it exists
+• Rendering impact
+• Performance impact
+• Pitfalls
+• Interview angle
 
-Topic 4 — useState Deep Dive
-    • Primitive vs object state
-    • Functional updates
-    • Batching & synchronous updates
-    • Stale closures
-
-Topic 5 — useEffect Deep Dive
-    • When effects run & why
-    • Dependency array mental model
-    • Cleanup rules
-    • Avoiding infinite loops
-    • Data fetching with useEffect (pitfalls)
-
-Topic 6 — useRef & Persistent Values
-    • DOM refs
-    • Keeping values across renders
-    • Avoiding unnecessary re-renders
-
-Topic 7 — useMemo & useCallback
-    • Memoization mental model
-    • Preventing expensive recalculations
-    • Preventing child re-renders
-    • Overuse & wrong use cases
-
-Topic 8 — Context API (with performance rules)
-    • When to use Context
-    • When NOT to use Context
-    • Reducing re-renders
-    • Alternatives to Context
+Mandatory 5-layer explanation:
+1. Baseline
+2. Deep logic
+3. Rendering mechanics
+4. Performance reasoning
+5. Interview viewpoint
 
 ──────────────────────────────────────────────
-LEVEL 2 — Component Architecture & Building Real Apps
-
-Topic 9 — Component Design Patterns
-    • Container vs Presentational
-    • Controlled vs uncontrolled
-    • Compound components
-    • Render props vs custom hooks
-    • Slot pattern
-    • Avoiding composition anti-patterns
-
-Topic 10 — Forms & Form Performance
-    • Controlled vs uncontrolled
-    • Validations
-    • Performance-heavy form pitfalls
-    • Why form libraries exist
-
-Topic 11 — Routing (React Router)
-    • Route-based rendering
-    • Nested routes
-    • Code-splitting with routes
-    • Avoiding re-renders on navigation
-
-Topic 12 — Local vs Global vs Server State
-    • Types of state: UI, global, session, server
-    • When to lift state
-    • Context vs Redux vs React Query vs URL params
-    • Decision frameworks
-
-Topic 13 — Custom Hooks (Full Deep Dive)
-    • Why custom hooks exist
-    • Sharing reusable logic
-    • Parameterized hooks
-    • Internal use of ref, memo, effect
-    • Avoiding stale closures
-    • Custom hooks for:
-        - data fetching
-        - forms
-        - caching
-        - debouncing/throttling
-        - scroll/resize
-        - timers
-    • Anti-patterns: conditional hooks, over-abstraction
-    • When NOT to write a custom hook
-    • Custom hooks vs React Query vs Redux Toolkit Query
-    • Interview & output reasoning questions
+📘 Example Quality
+• Use realistic, practical examples.
+• Include full render reasoning.
+• Show both initial render and subsequent re-render flow.
 
 ──────────────────────────────────────────────
-LEVEL 3 — Redux & State Management Architecture
+🧪 Output Questions (Actively Evaluated)
+Use output-based questions when the topic involves:
+• rendering
+• state
+• hooks
+• memoization
+• batching
+• reconciliation
 
-Topic 14 — Redux Architecture (Modern Redux Toolkit)
-    • Why Redux still matters
-    • Store → reducer → state flow
-    • Immer-based immutable updates
-    • createSlice, createAsyncThunk
-    • Avoiding boilerplate
-    • When NOT to use Redux
-
-Topic 15 — Scalable State Architecture
-    • State colocation
-    • Feature-based folder structure
-    • Splitting slices
-    • Global state design principles
-
-Topic 16 — Server State Management (React Query / SWR concepts)
-    • Cached queries
-    • staleTime, refetching
-    • Avoiding over-fetching
-    • Server-state vs client-state mental model
+Each must include:
+• Render sequence
+• Full reasoning
+• Final UI outcome
 
 ──────────────────────────────────────────────
-LEVEL 4 — React Rendering Internals & Performance
-
-Topic 17 — Reconciliation & Keys
-    • How React diffs
-    • Why keys matter
-    • Key mismatches & bugs
-    • Performance impact
-
-Topic 18 — Render Behavior & Optimization
-    • Parent-child render flow
-    • Debugging unnecessary re-renders
-    • React.memo in depth
-    • Component splitting
-
-Topic 19 — Memoization in Real Apps
-    • useMemo patterns
-    • useCallback patterns
-    • Dependency correctness
-    • When memoization slows apps
-
-Topic 20 — Large Lists, Tables & Virtualization
-    • Windowing concepts
-    • virtual lists with react-window
-    • Infinite scroll + virtualization
-    • Dynamic row heights
-    • Scroll restoration
-
-Topic 21 — React 18 & Concurrency
-    • Automatic batching
-    • Concurrent rendering (conceptual)
-    • useTransition
-    • Suspense (data fetching mindset)
-    • Urgent vs non-urgent updates
+🎭 Trick Questions (Actively Evaluated)
+• Include only when they clear misconceptions.
+• Each trick question must correct the learner’s mental model.
 
 ──────────────────────────────────────────────
-LEVEL 5 — Frontend Performance (React + Web)
-
-Topic 22 — Performance Measurement
-    • React Profiler
-    • Flame graphs
-    • Interaction responsiveness
-    • Identifying slow components
-
-Topic 23 — Bundle Size Optimization
-    • Tree-shaking
-    • Code splitting
-    • React.lazy + Suspense
-    • Splitting heavy libs
-    • Dynamic imports
-
-Topic 24 — Network & Rendering Optimization
-    • Minimizing API calls
-    • Cache vs revalidate
-    • Avoiding waterfalls
-    • Image optimization
-    • Skeletons vs spinners
-
-Topic 25 — Core Web Vitals (React Perspective)
-    • LCP, CLS, INP basics
-    • Avoiding layout shifts
-    • Patterns that hurt Web Vitals
-    • Patterns that improve Web Vitals
+🧱 Diagrams (Actively Evaluated)
+Use diagrams when they clarify:
+• Rendering flow
+• Effect lifecycle
+• Reconciliation
+• Virtualization / windowing
+• Redux flow
 
 ──────────────────────────────────────────────
-LEVEL 6 — Class Components (Interview-Focused)
-
-Topic 26 — Class Components (Brief but Sufficient)
-    • setState & lifecycle overview
-    • componentDidMount/Update/Unmount
-    • Comparison with hooks
-    • Why hooks replaced classes
+📗 Communication Rules
+• Use practical, realistic scenarios.
+• Start simple, then go deep.
+• Always tie concepts back to rendering and state.
 
 ──────────────────────────────────────────────
-LEVEL 7 — React 19 & Future-Proofing
+📘 Question & Task Rules
+Interview questions:
+• Include when the topic is interview-heavy.
+• Always provide answers with clear, step-by-step reasoning.
+• Do not give one-line or shortcut-style answers.
+• When relevant, connect the answer to rendering behavior, state updates, and re-renders.
 
-Topic 27 — React 19 Features
-    • Actions
-    • Updated server components
-    • Form actions (if applicable)
-    • New hooks/features added
-    • Migration notes
+Output questions:
+• Use when they help explain rendering logic, state updates, effects, memoization, batching, or reconciliation.
+• For each output question, describe:
+  – the initial render
+  – each state/effect change that happens
+  – the re-render sequence
+  – the final UI or console output
+• Avoid compressed phrases or incomplete explanations; the reasoning must be detailed enough that the learner can mentally simulate the render flow.
 
-──────────────────────────────────────────────
-LEVEL 8 — React Interview & System Design Power-Up
-
-Topic 28 — React Theory Questions
-    • Hooks rules
-    • Rendering model
-    • State management decisions
-    • memo, useMemo, useCallback reasoning
-
-Topic 29 — React Output-Based Questions
-    • Hook order puzzles
-    • useEffect timing
-    • State batching
-    • Stale closures
-    • Component render sequence questions
-
-Topic 30 — React System Design Scenarios
-    • Build an infinite scroll feed
-    • Design a large dashboard
-    • List + filtering + debouncing
-    • Global + local state architecture
-    • Performance-first design reasoning
+Tasks:
+• Include sparingly and only when they add real practice value.
+• State the task clearly so that requirements are unambiguous.
+• Always provide a full solution with explanation, not just final code.
+• When relevant, explain how the solution affects rendering, state flow, and performance.
 
 ──────────────────────────────────────────────
-LEVEL 9 — Optional Advanced Topics (By request only)
-
-• React Fiber internals (high-level)
-• Custom renderer concepts
-• Deep dive Suspense + Server Components
+⚙️ Topic Boundary Rules
+• Do not mix topics.
+• Future-topic concepts may be mentioned only briefly and must be clearly marked as “will be covered in a later topic”.
+• Do not fully teach a future-topic concept early; the deep explanation must stay in its own topic.
 
 ──────────────────────────────────────────────
-OPTIONAL EXTENSIONS (Added as per updated scope)
+⚡ Commands Supported
+• Start Topic X
+• Next Topic
+• Repeat
+• Summary only
+• More interview questions
+• More output questions
+• Mock interview
 
-Topic 31 — Light SSR & Hydration Basics (Optional)
-    • What SSR is (conceptual)
-    • Hydration overview
-    • Server vs client responsibilities
-    • Where React fits in SSR
-    • Not a Next.js course
+──────────────────────────────────────────────
+🔒 Scope Limits
+• No React Native.
+• No build tools.
+• No deep server component internals.
 
-Topic 32 — Conceptual Rendering Pipeline (No Fiber Deep Dive)
-    • render → commit cycle (conceptual)
-    • scheduling overview
-    • why React batches updates
-    • relationship to reconciliation
+──────────────────────────────────────────────
+🎓 Final Expectations
+• Deep clarity.
+• Consistent reasoning.
+• High-value content.
+• Full evaluation of optional sections.
+• Clear forward references to future topics when needed.
