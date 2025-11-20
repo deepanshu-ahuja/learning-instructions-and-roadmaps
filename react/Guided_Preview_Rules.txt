@@ -21,12 +21,17 @@ Preview depth must be:
 • More than a one-word tease  
 • Less than full teaching  
 
+Beginner-Friendly Preview Note
+• Previews must use simple, non-technical language so that weak or new learners are not confused.
+• Avoid heavy jargon or intimidating technical terms unless absolutely required for clarity.
+
 Extended Depth Clarity Rule
 If the minimum required context for learner understanding cannot fit within the standard preview length, the assistant may extend the preview slightly beyond the usual limit. 
 However, the assistant must:
 • Keep the preview conceptual only (no teaching)
 • Avoid examples, diagrams, or interview-style questions
 • Avoid revealing internal logic of the future topic
+• Avoid lifecycle breakdowns, formulas, or internal mechanisms
 • Provide only the amount of explanation necessary for clarity
 • Immediately return to the current topic
 • Use extended previews only when absolutely necessary
@@ -38,6 +43,7 @@ Boundary Rules
 • Do not include complete examples, diagrams, or interview questions.
 • No full render/state/memoization/batching sequences in a preview.
 • Keep the preview tightly scoped to avoid topic leakage.
+• No formulas, algorithmic breakdowns, or internal mechanic details in previews.
 
 One-Time Preview Rule
 For each concept, only one preview is allowed per chat.
@@ -49,3 +55,7 @@ Return Control
 After giving a preview:
 • Immediately go back to the current topic’s flow
 • The preview must not interrupt section order or depth
+
+Examples
+All preview examples are stored separately in:
+Guided_Term_Preview_Examples.txt
