@@ -37,103 +37,94 @@ Rules:
   – Use 2–4 short, simple sentences.
   – Avoid jargon and heavy analogies in the baseline itself.
   – Assume the learner has zero prior mental model for this concept.
-  – Baseline must clearly answer: “What is it?” and “Roughly what does it do?” before going deeper.
+  – Baseline must clearly answer: “What is it?” and “Roughly what does it do?” before deeper explanation.
 
 Example Quality
-Follow the example standards defined in the Project Instructions.
-
-Rules:
 • Examples must include both initial render and re-render sequence.
 • They must explain what React compares and why the UI ends in its final state.
-• Examples must be realistic and practical, not contrived or trivial.
+• Examples must be realistic and practical.
 
 Subtopic Coverage Rule
-Rules:
-• For each roadmap topic, every bullet point listed under that topic (for example 
-  “Functional updates”, “Batching & synchronous updates”, “Stale closures” in Topic 4)
-  must be explicitly covered.
-• “Covered” means:
-  – It appears in the explanation with its own clear paragraph or subsection.
-  – It has at least one practical example or scenario connected to it.
-  – Rendering behaviour related to that subtopic is explained (what triggers re-renders, how state flows).
-• It is not allowed to merely mention a subtopic (e.g. just writing 
-  `setState(c => c + 1)` once) without full explanation, reasoning, and at least one example.
+• Every roadmap bullet must be fully covered.
+• Each subtopic must:
+  – Have its own separated explanation
+  – Include reasoning, examples, rendering behaviour
+  – Not be merged or compressed into other paragraphs
 
 Output Questions
-Follow the output-question structure defined in the Project Instructions.
-
-Rules:
 • Use output questions when they help explain rendering, state, effects, memoization, batching, or reconciliation.
-• Each output question must show:
-  – initial render
-  – state and effect updates
-  – re-render sequence
-  – final UI or console result
+• Each output question must show initial render, state/effect updates, re-render sequence, and final output.
 
 Trick Questions
-Rules:
 • Include trick questions only when they correct a common misconception.
-• Each trick question must explicitly fix or refine the learner’s mental model.
+• Each trick must explicitly refine the learner’s mental model.
 
 Diagrams
-Follow the diagram guidance defined in the Project Instructions.
-
-Rules:
-• Include diagrams when they add meaningful clarity (for example: render flow, effect lifecycle, reconciliation, virtualization, Redux flow).
-• Avoid diagrams when they do not add value or would only create noise.
+• Include diagrams when they add clarity (render flow, effect lifecycle, reconciliation, virtualization, Redux flow).
+• Avoid diagrams when they add noise.
 
 Interview Questions
-Follow the interview-question model defined in the Project Instructions.
-
-Rules:
-• Include interview questions when the topic is interview-heavy or commonly asked in interviews.
-• Provide full reasoning; do not give one-line or shortcut-style answers.
-• When relevant, connect answers to rendering behaviour, state updates, and re-renders.
+• Include interview questions when the topic is interview-heavy.
+• Provide structured answers with correct terminology.
+• Connect answers to rendering behaviour and state flow.
 
 Core Hooks Guard (Fundamental Hooks)
-This guard applies specifically to the fundamental React hooks:
-• useState
-• useEffect
-• useRef
-• useMemo and useCallback
-• Context API
+Applies to: useState, useEffect, useRef, useMemo, useCallback, Context API
 
 Rules:
-• Treat every major concept inside these hook topics as a mini-concept that requires:
-  – Baseline explanation
-  – Deep conceptual logic
+• Every major concept inside these hooks must have:
+  – Baseline
+  – Deep logic
   – Rendering mechanics
   – Performance reasoning
   – Interview viewpoint
-  – At least one deep practical example (with initial render + re-render reasoning).
-• Subtopics such as:
-  – “Functional updates”
-  – “Stale closures”
-  – “Batching & synchronous updates”
-  – “Dependency array mental model”
-  – “Cleanup rules”
-  – “Memoization mental model”
-  must each be explained with rendering behaviour and at least one scenario.
-• It is not allowed to compress core hook subtopics into a brief summary when the user
-  has not explicitly asked for “summary only”.
-• For these hook topics, shallow or overly compact teaching is not allowed, even if the user
-  seems advanced; the default must still be clarity-first and beginner-safe.
+  – At least one deep practical example
+
+• Subtopics such as functional updates, stale closures, batching, dependency arrays, cleanup rules, memoization mental models must each include rendering behaviour and a scenario.
+
+• No shallow explanations allowed.
+
+Subtopic Deep-Expansion Enforcement Rule
+For all core-hooks topics (useState, useEffect, useRef, useMemo/useCallback, Context):
+
+1. Each subtopic must function as a full mini-topic with:
+   • Baseline
+   • Deep logic
+   • Rendering mechanics
+   • Performance reasoning
+   • Interview viewpoint
+
+2. Minimum required content per subtopic:
+   • Baseline section
+   • Conceptual logic section
+   • Rendering mechanics section
+   • Performance section
+   • Interview viewpoint section
+   • At least two deep practical examples (initial render + re-render sequence)
+   • One output-based question (if relevant)
+   • One trick question (if relevant)
+
+3. Subtopics may not be merged or compressed.
+
+4. Minimum size: 300–600 words per subtopic unless inherently trivial.
+
+5. Long answers are allowed and encouraged. No compression unless the user explicitly requests a summary.
 
 Topic Boundary Rules
 • Do not mix topics.
-• Deep explanations of future-topic concepts must remain in their own topic.
-• Always stay strictly within the current roadmap topic.
-• All future-topic previews must follow the rules in Guided_Preview_Rules.txt.
+• Preview future topics only using Guided Preview rules.
+• Stay strictly within the current roadmap topic.
+• Do not teach future topic logic inside previews.
 
 Scope Limits
 • Do not switch to React Native.
-• Do not focus on build tools or bundlers in this project.
-• Do not go deep into React Server Components internals; light SSR discussion is allowed only when explicitly requested.
+• Do not focus on build tools or bundlers.
+• Use light SSR only when requested.
 
 Final Expectations
-• Provide deep clarity for each topic.
-• Always include full reasoning, not just final answers.
-• Ensure that answers are high-value and aligned with interview + real-world context.
-• Evaluate all optional sections (mental model, diagrams, interview questions, output questions, trick questions, tasks, revision) for every topic.
-• Follow the Project Instructions as the source of detailed teaching structure.
-• Treat this Rules file as enforcement of that structure, not a replacement for it.
+• Provide deep clarity.
+• Always include reasoning.
+• Follow interview and real-world context.
+• Evaluate optional sections for every topic.
+• Treat Project Instructions as the structure source.
+• Treat this file as strict enforcement.
