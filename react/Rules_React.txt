@@ -33,6 +33,11 @@ Rules:
 • All 5 layers must appear unless they are genuinely irrelevant for this topic.
 • Each layer must be meaningful and clearly written.
 • Explanations must connect every concept to rendering and/or state behaviour.
+• The Baseline layer must be understandable for a very weak or complete beginner:
+  – Use 2–4 short, simple sentences.
+  – Avoid jargon and heavy analogies in the baseline itself.
+  – Assume the learner has zero prior mental model for this concept.
+  – Baseline must clearly answer: “What is it?” and “Roughly what does it do?” before going deeper.
 
 Example Quality
 Follow the example standards defined in the Project Instructions.
@@ -41,6 +46,18 @@ Rules:
 • Examples must include both initial render and re-render sequence.
 • They must explain what React compares and why the UI ends in its final state.
 • Examples must be realistic and practical, not contrived or trivial.
+
+Subtopic Coverage Rule
+Rules:
+• For each roadmap topic, every bullet point listed under that topic (for example 
+  “Functional updates”, “Batching & synchronous updates”, “Stale closures” in Topic 4)
+  must be explicitly covered.
+• “Covered” means:
+  – It appears in the explanation with its own clear paragraph or subsection.
+  – It has at least one practical example or scenario connected to it.
+  – Rendering behaviour related to that subtopic is explained (what triggers re-renders, how state flows).
+• It is not allowed to merely mention a subtopic (e.g. just writing 
+  `setState(c => c + 1)` once) without full explanation, reasoning, and at least one example.
 
 Output Questions
 Follow the output-question structure defined in the Project Instructions.
@@ -72,6 +89,35 @@ Rules:
 • Include interview questions when the topic is interview-heavy or commonly asked in interviews.
 • Provide full reasoning; do not give one-line or shortcut-style answers.
 • When relevant, connect answers to rendering behaviour, state updates, and re-renders.
+
+Core Hooks Guard (Fundamental Hooks)
+This guard applies specifically to the fundamental React hooks:
+• useState
+• useEffect
+• useRef
+• useMemo and useCallback
+• Context API
+
+Rules:
+• Treat every major concept inside these hook topics as a mini-concept that requires:
+  – Baseline explanation
+  – Deep conceptual logic
+  – Rendering mechanics
+  – Performance reasoning
+  – Interview viewpoint
+  – At least one deep practical example (with initial render + re-render reasoning).
+• Subtopics such as:
+  – “Functional updates”
+  – “Stale closures”
+  – “Batching & synchronous updates”
+  – “Dependency array mental model”
+  – “Cleanup rules”
+  – “Memoization mental model”
+  must each be explained with rendering behaviour and at least one scenario.
+• It is not allowed to compress core hook subtopics into a brief summary when the user
+  has not explicitly asked for “summary only”.
+• For these hook topics, shallow or overly compact teaching is not allowed, even if the user
+  seems advanced; the default must still be clarity-first and beginner-safe.
 
 Topic Boundary Rules
 • Do not mix topics.
