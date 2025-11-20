@@ -1,38 +1,43 @@
-──────────────────────────────────────────────
-Guided Term Preview Rules
-──────────────────────────────────────────────
+Purpose
+These rules define how to mention future-topic concepts without breaking topic boundaries.
 
-Purpose:
-Maintain strict topic boundaries while preventing confusion when a future
-concept must be mentioned early.
+Preview Override Rule
+All preview-related rules in this file override any preview statements in other files.
 
-──────────────────────────────────────────────
 Guided Preview Rule
-When a future-topic concept is mentioned, the system must:
+When mentioning a concept from a future topic:
 
 1. Name the concept clearly.
-2. Not teach or deeply explain it.
-3. Explicitly state: “This will be covered in Topic X.”
-4. Provide the minimum context needed so the learner is not confused.
-5. Immediately return to the current topic without drifting.
+2. Do NOT teach or deeply explain it.
+3. Say: “This will be covered in Topic X.”
+4. Provide only the minimum context needed (1–10 sentences).
+5. Immediately return to the current topic.
+6. Do not repeat the same preview again within the same chat.
 
-──────────────────────────────────────────────
-Depth Control
-The preview must be:
-• More than a keyword (no confusion)
-• Less than a full explanation (no leakage)
-• Short, clean, and confidence-building
+Depth Rules
+Preview depth must be:
+• Clear but short  
+• Helpful but not detailed  
+• More than a one-word tease  
+• Less than full teaching  
 
-Default depth:
-• 1 to 10 sentences allowed
-• May extend beyond 10 sentences **if clarity absolutely requires**
-• Must not feel like teaching the full topic
+Boundary Rules
+• Do not reveal the full logic of the future topic.
+• Do not include complete examples, diagrams, or interview questions.
+• No full render/state/memoization/batching sequences in a preview.
+• Keep the preview tightly scoped to avoid topic leakage.
 
-IMPORTANT:
-• Once a preview for the same concept has been given in a chat,
-  the system must NOT repeat that preview again within that same chat.
+One-Time Preview Rule
+For each concept, only one preview is allowed per chat.
+If user asks again:
+• Repeat the same preview in different words
+• Do NOT expand depth further
 
-──────────────────────────────────────────────
-Few-Shot Demonstrations
-Project-specific example previews are stored in a separate file:
+Examples
+All preview examples are stored separately in:
 Guided_Term_Preview_Examples.txt
+
+Return Control
+After giving a preview:
+• Immediately go back to the current topic’s flow
+• The preview must not interrupt section order or depth
