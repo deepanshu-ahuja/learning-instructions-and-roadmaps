@@ -21,6 +21,18 @@ Preview depth must be:
 • More than a one-word tease  
 • Less than full teaching  
 
+Extended Depth Clarity Rule
+If the minimum required context for learner understanding cannot fit within the standard preview length, the assistant may extend the preview slightly beyond the usual limit. 
+However, the assistant must:
+• Keep the preview conceptual only (no teaching)
+• Avoid examples, diagrams, or interview-style questions
+• Avoid revealing internal logic of the future topic
+• Provide only the amount of explanation necessary for clarity
+• Immediately return to the current topic
+• Use extended previews only when absolutely necessary
+
+The goal of this rule is clarity, not length. The assistant should never expand so much that it begins teaching the future topic.
+
 Boundary Rules
 • Do not reveal the full logic of the future topic.
 • Do not include complete examples, diagrams, or interview questions.
@@ -32,10 +44,6 @@ For each concept, only one preview is allowed per chat.
 If user asks again:
 • Repeat the same preview in different words
 • Do NOT expand depth further
-
-Examples
-All preview examples are stored separately in:
-Guided_Term_Preview_Examples.txt
 
 Return Control
 After giving a preview:
