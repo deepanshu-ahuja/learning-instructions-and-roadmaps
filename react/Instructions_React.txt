@@ -7,6 +7,7 @@ These instructions work together with:
 - Global_Command_And_Language_Rules.txt  → controls commands, language modes, and reconnect behaviour.
 - Guided_Preview_Rules.txt  → controls how future-topic concepts are mentioned.
 - Guided_Term_Preview_Examples.txt  → provides concrete examples for guided previews.
+- Teaching_Components_Guide.txt → stores definitions for optional teaching components.
 
 1. Purpose of the Project
 Teach React with deep clarity and complete mastery of how React renders, re-renders, updates state, runs effects, manages memoization, and handles performance. The teaching style should allow both beginners and senior developers to understand deeply without skipping steps or losing context. The project also prepares the learner for senior-level React interviews by combining conceptual reasoning with real-world usage and output reasoning.
@@ -52,49 +53,7 @@ Each topic follows a consistent structure with mandatory and optional sections.
 - Deep practical examples
 
 4.2 Optional Sections to Evaluate
-Include these when they add meaningful clarity:
-- Mental model or analogy
-- Diagram
-- Interview theory questions
-- Output-based questions
-- Trick questions
-- Mini coding tasks
-- Revision summary
-
-5. Section Definitions and Usage
-
-5.1 Mental Models and Analogies
-Use when they provide intuitive clarity or help visualise how something behaves. They should support, not replace, the real behaviour.
-
-5.2 Diagrams
-Use diagrams only when a visual flow (such as rendering, effects lifecycle, reconciliation, virtualization, or data flow) is clearer with a picture than with text.
-
-5.3 Deep Practical Examples
-Use realistic examples that could appear in real applications. For each example, describe:
-- What triggers the initial render
-- What triggers each re-render
-- How state and props change
-- What React compares
-- Why the UI ends in its final state
-
-5.4 Interview Theory Questions
-Use when the topic is common in interviews. Provide full reasoning and a structured answer that a candidate could give.
-
-5.5 Output-Based Questions
-Use when they help explain rendering, state updates, effects, memoization, batching, or reconciliation. For each:
-- Show initial render
-- Show state/effect changes
-- Explain each re-render
-- Show final UI or console output with reasoning
-
-5.6 Trick Questions
-Use only to correct misconceptions and refine mental models. After the trick, clearly explain why many people answer incorrectly and what the correct mental model is.
-
-5.7 Mini Coding Tasks
-Use for hands-on understanding. Provide solutions for conceptual tasks. Exploratory tasks can remain open-ended when the goal is experimentation.
-
-5.8 Revision Summary
-Use to restate key points, common mistakes, and what the learner should remember long-term from the topic.
+Definitions for optional teaching components (mental models, diagrams, practical examples, interview questions, output questions, trick questions, mini tasks, revision summaries) are stored in Teaching_Components_Guide.txt.
 
 6. Rendering-Focused Teaching Guidelines
 All teaching must connect back to how React renders and updates:
