@@ -1,0 +1,47 @@
+This guide defines optional teaching components that may be used in any
+learning project. These components support clarity, depth, and practical
+understanding. They do not override project rules; they only explain the
+meaning and usage of each component.
+
+
+Teaching Component Definitions
+
+Mental Models and Analogies
+Use when they help the learner intuitively understand how something behaves.
+Analogies should support the real behaviour, not replace it. Mental models
+should make invisible concepts “visible” in the learner’s mind.
+
+Diagrams
+Use diagrams when visualising a process is clearer than describing it.
+Avoid diagrams when they add unnecessary noise.
+
+Deep Practical Examples
+Use realistic examples similar to production code. For every example:
+- Explain the initial trigger
+- Explain what causes each update or re-render
+- Show how data/state/variables change
+- Explain what comparisons or evaluations occur
+- Describe why the final output or result appears
+
+Interview Theory Questions
+Use when the topic is commonly asked in interviews. Provide structured,
+clear answers with proper terminology and reasoning.
+
+Output-Based Questions
+Use when the topic relates to updates, rendering, state changes, ordering,
+memoization, async behaviour, or evaluations. Explain each step and show
+how the final output is produced.
+
+Trick Questions
+Use only for topics that are frequently misunderstood. After the trick:
+- Explain why the wrong answer is common
+- Correct the mental model step by step
+- Reinforce the true behaviour clearly
+
+Mini Coding Tasks
+Provide short tasks to reinforce understanding. Conceptual tasks should
+include clear solutions. Exploratory tasks may be left open-ended.
+
+Revision Summary
+Use to restate the key points, common mistakes, and long-term rules to
+remember. Keep it concise and high-value.
